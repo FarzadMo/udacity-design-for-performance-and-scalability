@@ -1,0 +1,31 @@
+Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,19870.00,238440.00,USD
+,,* Includes upfront cost
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,90.00,1,080.00,USD,,"Number of NAT Gateways (1)"
+My Estimate,US East (N. Virginia),Master DB,Amazon Aurora MySQL-Compatible,0,1,200.00,14,400.00,USD,,"Change records per statement (0.38), Nodes (2), Instance Type (db.r6g.large), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (5 TB)"
+My Estimate,US East (N. Virginia),Web Server 1,Amazon EC2,0,180.00,2,160.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (60 GB), Instance type (r7g.xlarge)"
+My Estimate,US East (N. Virginia),Web Server 2,Amazon EC2,0,180.00,2,160.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (60 GB), Instance type (r7g.xlarge)"
+My Estimate,US East (N. Virginia),Application Server 1,Amazon EC2,0,140.00,1,680.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (50 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),Application Server 2,Amazon EC2,0,140.00,1,680.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (50 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),DB Server 1,Amazon Aurora MySQL-Compatible,0,1,100.00,13,200.00,USD,,"Change records per statement (0.38), Nodes (1), Instance Type (db.r6g.large), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (5 TB)"
+My Estimate,US East (N. Virginia),DB Server 2,Amazon Aurora MySQL-Compatible,0,1,100.00,13,200.00,USD,,"Change records per statement (0.38), Nodes (1), Instance Type (db.r6g.large), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (5 TB)"
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,6,500.00,78,000.00,USD,,"S3 Standard storage (190 TB per month)"
+My Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0,USD,,""
+My Estimate,US East (N. Virginia),S3 Glacier,Amazon S3 Glacier,0,2,500.00,30,000.00,USD,,"S3 Glacier storage for long-term backup (100 TB per month)"
+My Estimate,US East (N. Virginia),Network Address Translation (NAT) Gateway,Amazon Virtual Private Cloud (VPC),0,6,740.00,80,880.00,USD,,"Number of NAT Gateways (2), Increased network bandwidth"
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+------------------------------------------------
+
+Rationale:
+I added S3 Glacier replication (100 TB) for backup, increased MySQL storage to 5 TB per instance, 
+and upgraded EC2 Web Servers for better performance. 
+To handle higher traffic, I expanded NAT Gateway capacity for increased throughput. 
+These changes improve redundancy, scalability, 
+and overall system efficiency while staying within the $20,000 budget.

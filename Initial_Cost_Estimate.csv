@@ -1,0 +1,21 @@
+Estimate Summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,9685.00,116220.00,USD
+,,* Includes upfront cost
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,90.00,1,080.00,USD,,"Number of NAT Gateways (1)"
+My Estimate,US East (N. Virginia),Master DB,Amazon Aurora MySQL-Compatible,0,760.00,9,120.00,USD,,"Change records per statement (0.38), Nodes (2), Instance Type (db.r6g.large), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (5 TB)"
+My Estimate,US East (N. Virginia),Web Server 1,Amazon EC2,0,95.00,1,140.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (30 GB), Instance type (r7g.large)"
+My Estimate,US East (N. Virginia),Web Server 2,Amazon EC2,0,95.00,1,140.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (30 GB), Instance type (r7g.large)"
+My Estimate,US East (N. Virginia),Application Server 1,Amazon EC2,0,70.00,840.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.large)"
+My Estimate,US East (N. Virginia),Application Server 2,Amazon EC2,0,70.00,840.00,USD,,"Operating system (Linux), Quantity (1), Pricing strategy (Compute Savings Plan 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.large)"
+My Estimate,US East (N. Virginia),DB Server 1,Amazon Aurora MySQL-Compatible,0,690.00,8,280.00,USD,,"Change records per statement (0.38), Nodes (1), Instance Type (db.r6g.large), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (5 TB)"
+My Estimate,US East (N. Virginia),DB Server 2,Amazon Aurora MySQL-Compatible,0,690.00,8,280.00,USD,,"Change records per statement (0.38), Nodes (1), Instance Type (db.r6g.large), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (5 TB)"
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,6,500.00,78,000.00,USD,,"S3 Standard storage (190 TB per month)"
+My Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0,USD,,""
+My Estimate,US East (N. Virginia),Network Address Translation (NAT) Gateway,Amazon Virtual Private Cloud (VPC),0,925.00,11,100.00,USD,,"Number of NAT Gateways (2)"
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
